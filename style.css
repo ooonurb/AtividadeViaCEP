@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.secao {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+h2 {
+    color: #0056b3;
+    font-size: 18px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    box-sizing: border-box; /* Garante que o padding não aumente a largura total */
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#btn-limpar {
+    background-color: #dc3545;
+}
+
+#btn-limpar:hover {
+    background-color: #c82333;
+}
+
+.erro {
+    color: red;
+    font-weight: bold;
+}
+
+.resultado-item {
+    background-color: #e9ecef;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-left: 5px solid #0056b3;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 5px;
+    color: #0056b3;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+li:hover {
+    color: #004494;
+}
+
+/* Responsividade simples */
+@media (max-width: 600px) {
+    body {
+        margin: 10px;
+    }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta ViaCEP Simples</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Consulta de CEP e Endereço</h1>
+
+    <div class="secao">
+        <h2>1. Pesquisa por CEP</h2>
+        <label>Digite o CEP (apenas números):</label>
+        <input type="text" id="input-cep" maxlength="8" placeholder="Ex: 01001000">
+        <button id="btn-buscar-cep">Buscar Endereço</button>
+    </div>
+
+    <div class="secao">
+        <h2>2. Pesquisa por Endereço</h2>
+        <label>UF:</label>
+        <select id="input-uf">
+            <option value="SP">São Paulo (SP)</option>
+            <option value="RJ">Rio de Janeiro (RJ)</option>
+            <option value="MG">Minas Gerais (MG)</option>
+            <option value="BA">Bahia (BA)</option>
+            <!-- outras UFs resumidas para simplificar ou completas, vamos por algumas -->
+            <option value="PR">Paraná (PR)</option>
+            <option value="SC">Santa Catarina (SC)</option>
+            <option value="RS">Rio Grande do Sul (RS)</option>
+        </select>
+        
+        <label>Cidade:</label>
+        <input type="text" id="input-cidade" placeholder="Ex: São Paulo">
+
+        <label>Logradouro (Rua):</label>
+        <input type="text" id="input-rua" placeholder="Ex: Praça da Sé">
+
+        <button id="btn-buscar-endereco">Buscar CEP</button>
+    </div>
+
+    <div class="secao">
+        <h2>Ações Adicionais</h2>
+        <button id="btn-limpar">Limpar Campos e Resultados</button>
+    </div>
+
+    <div class="secao">
+        <h2>Resultados</h2>
+        <p id="mensagem-erro" class="erro"></p>
+        <div id="div-resultados">
+            <!-- Os resultados vão aparecer aqui -->
+        </div>
+    </div>
+
+    <div class="secao">
+        <h2>Histórico de Pesquisas</h2>
+        <ul id="lista-historico">
+            <!-- O histórico vai aparecer aqui -->
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
